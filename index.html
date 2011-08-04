@@ -151,10 +151,39 @@
         We have been planning other great features for the near future, so don't
         forget to take a look from time to time.
     </section>
+
+    <section id="screenshots">
+      <div id="slides">
+        <div class="slides_container">
+          <div>
+            <a href="images/screenshot-1-1024.png" rel="screenshot" title="The projects view">
+              <img src="images/screenshot-1-thumbnail.png" alt="projects view screenshot"/>
+            </a>
+          </div>
+          <div>
+            <a href="images/screenshot-2-1024.png" rel="screenshot" title="The calendar">
+              <img src="images/screenshot-2-thumbnail.png" alt="The calendar"/>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer>
         footer
     </footer>
-  </div> <!--! end of #container -->
+    </div> <!--! end of #container -->
+    <style type="text/css" media="screen">
+      .slides_container {
+        width:470px;
+        height:170px;
+      }
+      .slides_container div {
+        width:470px;
+        height:170px;
+        display:block;
+      }
+    </style>
 
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
@@ -168,6 +197,16 @@
   <script type="text/javascript">
     $().ready(function() {
       $.localScroll();
+    });
+
+    $(function(){
+        // Initialize screenshot slideshow
+        $("#slides").slides({
+            generateNextPrev: true,
+            generatePagination: false
+        });
+        // initiate colorbox for the images in the slideshow
+        $("a[rel='screenshot']").colorbox();
     });
   </script>
 
