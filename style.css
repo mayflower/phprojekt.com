@@ -69,12 +69,33 @@ article.pageOne {
 }
 
 article.pageOne .phprojekt-download {
-    width: 240px;
-    height: 60px;
+    width: 180px;
+    height: 44px;
     background: #000000;
     border-radius: 8px 8px 8px 8px;
     -moz-border-radius: 8px 8px 8px 8px;
     -webkit-border-radius: 8px 8px 8px 8px;
+    float: right;
+    position: relative;
+    top: -94px;
+    right: 64px;
+    padding: 10px;
+}
+
+article.pageOne .phprojekt-download a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+article.pageOne .phprojekt-download .download {
+    font-size: 22px;
+    text-align: center;
+}
+
+article.pageOne .phprojekt-download .version {
+    line-height: 18px;
+    font-size: 11px;
+    text-align: center;
 }
 
 div.articleTwoContainer {
