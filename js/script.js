@@ -2,6 +2,10 @@
 
 */
 
+$().ready(function() {
+    $.localScroll();
+});
+
 
 
 
