@@ -31,6 +31,9 @@ article {
 article.pageOne {
     height: 568px;
     display: table;
+    background-image: url("./images/background-box-1-eyecandy.png");
+    background-repeat: no-repeat;
+    background-position: -100px;
 }
 
 article.pageOne section {
