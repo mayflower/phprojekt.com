@@ -68,6 +68,15 @@ article.pageOne {
     background-position: -100px;
 }
 
+article.pageOne .phprojekt-download {
+    width: 240px;
+    height: 60px;
+    background: #000000;
+    border-radius: 8px 8px 8px 8px;
+    -moz-border-radius: 8px 8px 8px 8px;
+    -webkit-border-radius: 8px 8px 8px 8px;
+}
+
 div.articleTwoContainer {
     background-image: url("./images/background-box-2.png");
     background-repeat: x;
