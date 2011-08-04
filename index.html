@@ -63,7 +63,7 @@
             </li>
         </ul>
     </header>
-    
+
     <div id="main" role="main">
         <div class="articleOneContainer">
             <article class="page pageOne">
@@ -93,6 +93,22 @@
                 <section class="left">
                     <header><h3>PHProjekt 6</h3></header>
                     PHProjekt is a web application that helps you with planning and running your projects.
+                </section>
+                <section id="screenshots">
+                    <div id="slides">
+                        <div class="slides_container">
+                            <div>
+                                <a href="images/screenshots/1.png" rel="screenshot" title="The projects view">
+                                    <img src="images/screenshots/thumbnails/1.png" alt="projects view screenshot"/>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="images/screenshots/2.png" rel="screenshot" title="The calendar">
+                                    <img src="images/screenshots/thumbnails/2.png" alt="The calendar"/>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </section>
                 <section class="center">
                     <header><h3>News</h3></header>
@@ -140,11 +156,22 @@
             </article>
         </div>
     </div>
-      
+
     <footer>
         footer
     </footer>
   </div> <!--! end of #container -->
+    <style type="text/css" media="screen">
+      .slides_container {
+        width:470px;
+        height:170px;
+      }
+      .slides_container div {
+        width:470px;
+        height:170px;
+        display:block;
+      }
+    </style>
 
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
