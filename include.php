@@ -25,5 +25,3 @@ function screenshotSection()
 
     echo "  </div>\n</section>\n";
 }
-
-screenshotSection();
