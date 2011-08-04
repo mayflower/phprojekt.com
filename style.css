@@ -14,6 +14,7 @@ div {
 
 header {
     height: 24px;
+    z-index: 2;
 }
 
 div#main {
