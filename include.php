@@ -26,4 +26,22 @@ function screenshotSection()
     echo "  </div>\n</section>\n";
 }
 
-screenshotSection();
+function downloadsJson()
+{
+    $tags = file_get_contents('https://api.github.com/repos/Mayflower/PHProjekt/tags');
+    if ($tags === false) {
+        // HAELP
+        throw new Exception('Could not contact github');
+    }
+
+    $tags = json_decode($tags);
+    $versions = array();
+    foreach ($tags as $t) {
+        if (preg_match('/^\d+\.\d+\.\d+.*/', $t->name)) {
+            $versions[$t->name] = array('zip' => $t->zipball_url, 'tgz' => $t->tarball_url);
+        }
+    }
+
+    uksort($versions, 'version_compare');
+    echo json_encode($versions);
+}
