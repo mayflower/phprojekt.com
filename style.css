@@ -120,3 +120,12 @@ article.pageThree section.right {
 footer {
     height: 241px;
 }
+
+h3 {
+    text-shadow: -1px -1px 0px rgba(0,0,0,0.5);
+    color: #d3d3d3;
+}
+
+#main {
+    text-shadow: -1px -1px 0px black;
+}
