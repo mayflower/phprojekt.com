@@ -14,7 +14,6 @@ div {
 
 header {
     height: 24px;
-    width: 1024px;
 }
 
 div#main {
@@ -53,9 +52,12 @@ div.articleOneContainer {
 }
 
 article {
-    width: 1024px;
     margin-left: auto;
     margin-right: auto;
+}
+
+article.page {
+    width: 960px;
 }
 
 article.pageOne {
@@ -64,10 +66,6 @@ article.pageOne {
     background-image: url("./images/background-box-1-eyecandy.png");
     background-repeat: no-repeat;
     background-position: -100px;
-}
-
-article.pageOne section {
-    width: 1024px;
 }
 
 div.articleTwoContainer {
@@ -81,21 +79,32 @@ article.pageTwo {
     padding-top: 40px;
 }
 
+article section {
+    width: 320px;
+    padding: 1em;
+}
+
+article section header h3 {
+    font-size: 18px;
+    text-shadow: -1px -1px 0px rgba(0,0,0,0.5);
+    color: #d3d3d3;
+}
+
 article.pageTwo section {
     display: table-cell;
 }
 
 article.pageTwo section.left {
-    width: 427px;
     padding-left: 40px;
 }
 
 article.pageTwo section.center {
-    width: 321px;
 }
 
 article.pageTwo section.right {
-    width: 236px;
+}
+
+div.articleThreeContainer {
 }
 
 article.pageThree {
@@ -109,21 +118,14 @@ article.pageThree section {
 }
 
 article.pageThree section.left {
-    width: 472px;
     padding-left: 40px;
 }
 
 article.pageThree section.right {
-    width: 512px;
 }
 
 footer {
     height: 241px;
-}
-
-h3 {
-    text-shadow: -1px -1px 0px rgba(0,0,0,0.5);
-    color: #d3d3d3;
 }
 
 #main {
@@ -134,9 +136,25 @@ h3 {
 .tooltip {
     display: none;
     background: url('images/white_arrow_upsidedown.png');
+    text-shadow: none;
     height: 87px;
     width: 187px;
     padding: 24px 13px 13px 11px;
     font-size: 11px;
-    color: #fff;
+    color: #000;
+}
+.pageOne section {
+    width: 100%;
+}
+
+.pageOne header {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    border-bottom: medium none;
+    color: #000000;
+    font-size: 0;
+    margin: 160px 0 10px;
+    text-indent: -9999px;
+    background-image: url('./images/header.png');
+    height: 115px;
 }
