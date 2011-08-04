@@ -12,10 +12,6 @@ div {
     border: 0px;
 }
 
-header {
-    height: 24px;
-}
-
 div#main {
     padding-top: 24px;
 }
@@ -25,6 +21,12 @@ header#mayflower-network {
     background-color: #000000;
     height: 24px;
     width: 100%;
+    z-index: 2;
+    background-image: url(images/favicon.png);
+    background-repeat: no-repeat;
+    background-position: 5px 2px;
+    padding-left: 10px;
+
 }
 
 header#mayflower-network ul {
@@ -56,6 +58,9 @@ article {
     margin-right: auto;
 }
 
+article p {
+    margin-bottom: 1em;
+}
 article.page {
     width: 960px;
 }
@@ -107,7 +112,6 @@ div.articleTwoContainer {
 article.pageTwo {
     height: 600px;
     display: table;
-    padding-top: 40px;
 }
 
 article section {
@@ -119,6 +123,7 @@ article section header h3 {
     font-size: 18px;
     text-shadow: -1px -1px 0px rgba(0,0,0,0.5);
     color: #d3d3d3;
+    margin-top: 1em;
 }
 
 article.pageTwo section {
@@ -141,7 +146,6 @@ div.articleThreeContainer {
 article.pageThree {
     height: 608px;
     display: table;
-    padding-top: 40px;
 }
 
 article.pageThree section {
@@ -195,18 +199,21 @@ footer {
     height: 115px;
 }
 
-table.tooltipTable td.tableCellCenter {
-    text-align: left;
-    vertical-align: middle;
+#colorbox {
+    z-index: 1;
 }
 
-table.tooltipTable {
-    width: 100%;
-    height: 100%;
-    font-size: 10pt;
+#slides {
+    width: 300px;
+    background: black;
+    padding: 5px;
+    margin: 10px 0 10px 0;
+    border-radius: 8px 8px 8px 8px;
+    -moz-border-radius: 8px 8px 8px 8px;
+    -webkit-border-radius: 8px 8px 8px 8px;
 }
 
-table.tooltipTable th {
-    font-weight: bold;
-    text-align: left;
+a, a:visited, a:active, a:hover {
+    color: white;
+    text-shadow: none;
 }
