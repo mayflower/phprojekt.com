@@ -58,6 +58,9 @@ article {
     margin-right: auto;
 }
 
+article p {
+    margin-bottom: 1em;
+}
 article.page {
     width: 960px;
 }
@@ -120,7 +123,7 @@ article section header h3 {
     font-size: 18px;
     text-shadow: -1px -1px 0px rgba(0,0,0,0.5);
     color: #d3d3d3;
-    margin-top: 2em;
+    margin-top: 1em;
 }
 
 article.pageTwo section {
@@ -162,6 +165,22 @@ footer {
 
 #main {
     text-shadow: -1px -1px 0px black;
+}
+
+/* tooltip styling */
+.tooltip {
+    display: none;
+    background: url('images/white_arrow.png');
+    text-shadow: none;
+    height: 87px;
+    width: 187px;
+    padding: 11px 11px 24px 11px;
+    font-size: 11px;
+    color: #000;
+}
+
+.tooltip div {
+    padding: 10px;
 }
 
 .pageOne section {
