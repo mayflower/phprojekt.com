@@ -64,3 +64,22 @@ section.pageTwo article.center {
 section.pageTwo article.right {
     width: 236px;
 }
+
+section.pageThree {
+    height: 608px;
+    display: table;
+    padding-top: 40px;
+}
+
+section.pageThree article {
+    display: table-cell;
+}
+
+section.pageThree article.left {
+    width: 472px;
+    padding-left: 40px;
+}
+
+section.pageThree article.right {
+    width: 512px;
+}
