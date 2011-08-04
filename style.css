@@ -12,11 +12,6 @@ div {
     border: 0px;
 }
 
-header {
-    height: 24px;
-    z-index: 2;
-}
-
 div#main {
     padding-top: 24px;
 }
@@ -26,6 +21,7 @@ header#mayflower-network {
     background-color: #000000;
     height: 24px;
     width: 100%;
+    z-index: 2;
 }
 
 header#mayflower-network ul {
@@ -108,7 +104,6 @@ div.articleTwoContainer {
 article.pageTwo {
     height: 600px;
     display: table;
-    padding-top: 40px;
 }
 
 article section {
@@ -120,6 +115,7 @@ article section header h3 {
     font-size: 18px;
     text-shadow: -1px -1px 0px rgba(0,0,0,0.5);
     color: #d3d3d3;
+    margin-top: 2em;
 }
 
 article.pageTwo section {
@@ -142,7 +138,6 @@ div.articleThreeContainer {
 article.pageThree {
     height: 608px;
     display: table;
-    padding-top: 40px;
 }
 
 article.pageThree section {
