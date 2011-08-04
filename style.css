@@ -22,6 +22,11 @@ header#mayflower-network {
     height: 24px;
     width: 100%;
     z-index: 2;
+    background-image: url(images/favicon.png);
+    background-repeat: no-repeat;
+    background-position: 5px 2px;
+    padding-left: 10px;
+
 }
 
 header#mayflower-network ul {
