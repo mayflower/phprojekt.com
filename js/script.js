@@ -1,34 +1,27 @@
 /* Author:
  * Simon Kohlmeyer <simon.kohlmeyer@mayflower.de>
  */
-$(function(){
+$(function() {
   // Initialize screenshot slideshow
   $("#slides").slides({
-    generateNextPrev: true,
-    generatePagination: false
+    generatePagination: false,
+    randomize: true,
+    play: 6000,
+    hoverPause: true,
+    crossfade: true,
+    fadeSpeed: 700,
+    effect: 'fade'
   });
   // initiate colorbox for the images in the slideshow
   $("a[rel='screenshot']").colorbox();
 });
 
+$().ready(function() {
+    $.localScroll();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    $("#download").tooltip({
+        effect: 'fade',
+        position: 'top center',
+        relative: true
+    });
+});

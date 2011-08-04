@@ -17,6 +17,7 @@
 
   <link rel="stylesheet" href="css/style.css?v=2">
   <link rel="stylesheet" type="text/css" href="./style.css"></link>
+  <link rel="stylesheet" type="text/css" href="./colorbox.css"></link>
 
   <script src="js/libs/modernizr-1.7.min.js"></script>
 </head>
@@ -74,12 +75,17 @@
                         <h2>Open Source Project Management</h2>
                     </header>
 
-                    <div class="phprojekt-download">
+                    <div class="phprojekt-download" id="download">
                         <a href="#">
                             <div class="download">Download</div>
-                            <div class="version">Version 6.1.0</div>
+                            <div class="version" id="versionInfo">Version 6.1.0</div>
                             <!-- You are not allowed to do this -->
                         </a>
+                    </div>
+                    <div class="tooltip">
+                        <div>
+                        <p>Download 6.1.0 as </br> zip or tar.gz.</p> <p>or download older releases</p>
+                        </div>
                     </div>
 
                 </section>
@@ -118,6 +124,7 @@
                 <section class="center">
                     <header>
                         <h3>News</h3>
+                        <h4>4.8.2011</h4>
                     </header>
                     <p>
                         We are currently in the middle of a very productive week working of
@@ -133,8 +140,6 @@
                         We have been planning other great features for the near future, so don't
                         forget to take a look from time to time.
                     </p>
-                </section>
-                <section class="right">
                     <header>
                         <h3>Commercial</h3>
                     </header>
@@ -194,11 +199,11 @@
   </div> <!--! end of #container -->
     <style type="text/css" media="screen">
       .slides_container {
-        width:470px;
+        width:300px;
         height:170px;
       }
       .slides_container div {
-        width:470px;
+        width:300px;
         height:170px;
         display:block;
       }
@@ -207,17 +212,17 @@
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
   <script>window.jQuery || document.write("<script src='js/libs/jquery-1.5.1.min.js'>\x3C/script>")</script>
+  <script src="http://cdn.jquerytools.org/1.2.5/jquery.tools.min.js"></script>
+
+  <script type="text/javascript">
+      var versionInfo = {"6.0.1":{"zip":"https:\/\/github.com\/Mayflower\/PHProjekt\/zipball\/6.0.1","tgz":"https:\/\/github.com\/Mayflower\/PHProjekt\/tarball\/6.0.1"},"6.0.2":{"zip":"https:\/\/github.com\/Mayflower\/PHProjekt\/zipball\/6.0.2","tgz":"https:\/\/github.com\/Mayflower\/PHProjekt\/tarball\/6.0.2"},"6.0.3":{"zip":"https:\/\/github.com\/Mayflower\/PHProjekt\/zipball\/6.0.3","tgz":"https:\/\/github.com\/Mayflower\/PHProjekt\/tarball\/6.0.3"},"6.0.4RC1":{"zip":"https:\/\/github.com\/Mayflower\/PHProjekt\/zipball\/6.0.4RC1","tgz":"https:\/\/github.com\/Mayflower\/PHProjekt\/tarball\/6.0.4RC1"},"6.0.4":{"zip":"https:\/\/github.com\/Mayflower\/PHProjekt\/zipball\/6.0.4","tgz":"https:\/\/github.com\/Mayflower\/PHProjekt\/tarball\/6.0.4"},"6.0.5":{"zip":"https:\/\/github.com\/Mayflower\/PHProjekt\/zipball\/6.0.5","tgz":"https:\/\/github.com\/Mayflower\/PHProjekt\/tarball\/6.0.5"},"6.0.6":{"zip":"https:\/\/github.com\/Mayflower\/PHProjekt\/zipball\/6.0.6","tgz":"https:\/\/github.com\/Mayflower\/PHProjekt\/tarball\/6.0.6"}};
+          console.log(versionInfo);
+  </script>
 
   <!-- scripts concatenated and minified via ant build script-->
   <script src="js/plugins.js"></script>
   <script src="js/script.js"></script>
   <!-- end scripts-->
-
-  <script type="text/javascript">
-    $().ready(function() {
-      $.localScroll();
-    });
-  </script>
 
 </body>
 </html>
