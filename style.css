@@ -178,3 +178,17 @@ footer {
     background-image: url('./images/header.png');
     height: 115px;
 }
+
+#slides {
+    background: black;
+    padding: 5px;
+    margin: 10px 0 10px 0;
+    border-radius: 8px 8px 8px 8px;
+    -moz-border-radius: 8px 8px 8px 8px;
+    -webkit-border-radius: 8px 8px 8px 8px;
+}
+
+a, a:visited, a:active, a:hover {
+    color: white;
+    text-shadow: none;
+}
