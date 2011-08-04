@@ -174,6 +174,11 @@ footer {
     font-size: 11px;
     color: #000;
 }
+
+.tooltip div {
+    padding: 10px;
+}
+
 .pageOne section {
     width: 100%;
 }
@@ -188,4 +193,20 @@ footer {
     text-indent: -9999px;
     background-image: url('./images/header.png');
     height: 115px;
+}
+
+table.tooltipTable td.tableCellCenter {
+    text-align: left;
+    vertical-align: middle;
+}
+
+table.tooltipTable {
+    width: 100%;
+    height: 100%;
+    font-size: 10pt;
+}
+
+table.tooltipTable th {
+    font-weight: bold;
+    text-align: left;
 }
