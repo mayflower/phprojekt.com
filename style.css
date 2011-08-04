@@ -29,6 +29,9 @@ section {
 }
 
 section.pageOne {
+    background-image: url("./images/background-box-1-eyecandy.png");
+    background-repeat: no-repeat;
+    background-position: -100px;
     height: 568px;
     display: table;
 }
