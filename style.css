@@ -194,6 +194,10 @@ footer {
     -webkit-border-radius: 8px 8px 8px 8px;
 }
 
+.slides_container {
+    margin-bottom: 5px;
+}
+
 a, a:visited, a:active, a:hover {
     color: white;
     text-shadow: none;
