@@ -3,7 +3,13 @@
 define("THUMBNAIL_FOLDER", "images/screenshots/thumbnails/");
 define("SCREENSHOT_FOLDER", "images/screenshots/");
 
-function screenshotSection()
+/**
+ * Returns an array like array(
+ *  array('thumbnail' => '...', 'image' => '...', 'desc' => ...),
+ *  ...
+ * )
+ */
+function getScreenshots()
 {
     /**
      * Each entry $num => $desc belongs to screenshot number $num with thumbnail images/screenshots/thumbnail/${num}.png
@@ -13,20 +19,25 @@ function screenshotSection()
         1 => "The projects view",
         2 => "The calendar"
     );
-
-    echo "<section id=\"screenshots\">\n  <div class=\"slides_container\">\n";
-    foreach ($screenshots as $id => $description) {
-        $thumbnail = THUMBNAIL_FOLDER . $id . '.png';
-        $image     = SCREENSHOT_FOLDER . $id . '.png';
-        echo "    <div>\n      <a href='$image' rel='screenshot' title='$description'>\n";
-        echo "        <img src='$thumbnail' alt='$description'/>\n";
-        echo "      </a>\n    </div>\n";
+    $ret = array();
+    foreach($screenshots as $id => $desc) {
+        $ret[] = array(
+            'thumbnail' => THUMBNAIL_FOLDER . $id . '.png',
+            'image'     => SCREENSHOT_FOLDER . $id . '.png',
+            'desc'      => $desc
+        );
     }
-
-    echo "  </div>\n</section>\n";
+    return $ret;
 }
 
-function downloadsJson()
+/**
+ * Returns the latest version as returned from github. Looks like array(
+ *  'name' => '6.1.0',
+ *  'zipball_url' => '...',
+ *  'tarball_url' => '...'
+ * )
+ */
+function getLatestVersion()
 {
     $tags = file_get_contents('https://api.github.com/repos/Mayflower/PHProjekt/tags');
     if ($tags === false) {
@@ -48,5 +59,5 @@ function downloadsJson()
         }
     }
     // Make the newest version the first
-    echo json_encode($t);
+    return $newest;
 }
