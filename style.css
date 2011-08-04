@@ -13,8 +13,27 @@ div {
 }
 
 header {
-    height: 30px;
+    height: 24px;
     width: 1024px;
+}
+
+header#mayflower-network ul {
+    list-style-type: none;
+    margin-top: 8px;
+}
+
+header#mayflower-network ul li {
+    float: left;
+    padding-right: 20px;
+}
+
+header#mayflower-network ul li a {
+    text-decoration: none;
+    color: #d3d3d3;
+}
+
+header#mayflower-network ul li a:hover {
+    text-decoration: underline;
 }
 
 div.articleOneContainer {
