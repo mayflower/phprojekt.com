@@ -180,6 +180,10 @@ footer {
     height: 115px;
 }
 
+#colorbox {
+    z-index: 1;
+}
+
 #slides {
     background: black;
     padding: 5px;

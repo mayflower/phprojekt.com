@@ -35,13 +35,18 @@ function downloadsJson()
     }
 
     $tags = json_decode($tags);
-    $versions = array();
-    foreach ($tags as $t) {
-        if (preg_match('/^\d+\.\d+\.\d+.*/', $t->name)) {
-            $versions[$t->name] = array('zip' => $t->zipball_url, 'tgz' => $t->tarball_url);
-        }
+    if (empty($tags)) {
+        throw new Exception('No version found!');
     }
 
-    uksort($versions, 'version_compare');
-    echo json_encode($versions);
+    $newest = null;
+    foreach ($tags as $t) {
+        if (preg_match('/^\d+\.\d+.\d+.*/', $t->name)) {
+            if (is_null($newest) || version_compare($newest->name, $t->name, '<')) {
+                $newest = $t;
+            }
+        }
+    }
+    // Make the newest version the first
+    echo json_encode($t);
 }
