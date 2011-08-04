@@ -137,10 +137,22 @@ footer {
     height: 241px;
 }
 
-h3 {
-
-}
-
 #main {
     text-shadow: -1px -1px 0px black;
+}
+
+.pageOne section {
+    width: 100%;
+}
+
+.pageOne header {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    border-bottom: medium none;
+    color: #000000;
+    font-size: 0;
+    margin: 160px 0 10px;
+    text-indent: -9999px;
+    background-image: url('./images/header.png');
+    height: 115px;
 }
