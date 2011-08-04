@@ -17,72 +17,72 @@ header {
     width: 1024px;
 }
 
-div.sectionOneContainer {
+div.articleOneContainer {
     background-image: url("./images/background-box-1.png");
     background-repeat: x;
 }
 
-section {
+article {
     width: 1024px;
     margin-left: auto;
     margin-right: auto;
 }
 
-section.pageOne {
+article.pageOne {
+    height: 568px;
+    display: table;
     background-image: url("./images/background-box-1-eyecandy.png");
     background-repeat: no-repeat;
     background-position: -100px;
-    height: 568px;
-    display: table;
 }
 
-section.pageOne article {
+article.pageOne section {
     width: 1024px;
 }
 
-div.sectionTwoContainer {
+div.articleTwoContainer {
     background-image: url("./images/background-box-2.png");
     background-repeat: x;
 }
 
-section.pageTwo {
+article.pageTwo {
     height: 600px;
     display: table;
     padding-top: 40px;
 }
 
-section.pageTwo article {
+article.pageTwo section {
     display: table-cell;
 }
 
-section.pageTwo article.left {
+article.pageTwo section.left {
     width: 427px;
     padding-left: 40px;
 }
 
-section.pageTwo article.center {
+article.pageTwo section.center {
     width: 321px;
 }
 
-section.pageTwo article.right {
+article.pageTwo section.right {
     width: 236px;
 }
 
-section.pageThree {
+article.pageThree {
     height: 608px;
     display: table;
     padding-top: 40px;
 }
 
-section.pageThree article {
+article.pageThree section {
     display: table-cell;
 }
 
-section.pageThree article.left {
+article.pageThree section.left {
     width: 472px;
     padding-left: 40px;
 }
 
-section.pageThree article.right {
+article.pageThree section.right {
     width: 512px;
 }
