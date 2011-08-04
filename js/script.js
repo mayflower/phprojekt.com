@@ -7,7 +7,7 @@ $().ready(function() {
 
     $("#download").tooltip({
         effect: 'fade',
-        position: 'bottom center',
+        position: 'top center',
         relative: true
     });
 });
