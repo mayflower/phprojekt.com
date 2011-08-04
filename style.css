@@ -185,7 +185,10 @@ footer {
     padding: 10px;
 }
 
-.tooltip a, a:visited, a:active, a:hover {
+.tooltip a,
+.tooltip a:visited,
+.tooltip a:active,
+.tooltip a:hover {
     color: black;
     text-shadow: none;
 }
