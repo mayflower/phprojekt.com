@@ -58,6 +58,9 @@ article {
     margin-right: auto;
 }
 
+article p {
+    margin-bottom: 1em;
+}
 article.page {
     width: 960px;
 }
