@@ -129,3 +129,14 @@ h3 {
 #main {
     text-shadow: -1px -1px 0px black;
 }
+
+/* tooltip styling */
+.tooltip {
+    display: none;
+    background: url('images/white_arrow_upsidedown.png');
+    height: 87px;
+    width: 187px;
+    padding: 24px 13px 13px 11px;
+    font-size: 11px;
+    color: #fff;
+}
