@@ -161,6 +161,8 @@ article.pageThree section.right {
 
 footer {
     height: 241px;
+    width: 960px;
+    margin: auto;
 }
 
 #main {
@@ -211,6 +213,10 @@ footer {
     border-radius: 8px 8px 8px 8px;
     -moz-border-radius: 8px 8px 8px 8px;
     -webkit-border-radius: 8px 8px 8px 8px;
+}
+
+.slides_container {
+    margin-bottom: 5px;
 }
 
 a, a:visited, a:active, a:hover {
