@@ -83,7 +83,7 @@
 
                     <?php $latest = getLatestVersion(); ?>
                     <div class="phprojekt-download" id="download">
-                        <a href="#">
+                        <a href="<?php echo $latest->zipball_url; ?>">
                             <div class="download">Download</div>
                             <div class="version" id="versionInfo">Version <?php echo $latest->name; ?></div>
                             <!-- You are not allowed to do this -->
