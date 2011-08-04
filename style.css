@@ -188,6 +188,7 @@ footer {
 }
 
 #slides {
+    width: 300px;
     background: black;
     padding: 5px;
     margin: 10px 0 10px 0;
