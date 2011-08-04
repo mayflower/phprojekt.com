@@ -18,13 +18,13 @@ header {
 }
 
 div#main {
-    padding-top: 30px;
+    padding-top: 24px;
 }
 
 header#mayflower-network {
     position: fixed;
     background-color: #000000;
-    height:30px;
+    height: 24px;
     width: 100%;
 }
 
