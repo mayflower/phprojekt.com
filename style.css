@@ -156,6 +156,8 @@ article.pageThree section.right {
 
 footer {
     height: 241px;
+    width: 960px;
+    margin: auto;
 }
 
 #main {
