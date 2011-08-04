@@ -31,7 +31,7 @@ function getScreenshots()
 }
 
 /**
- * Returns the latest version as returned from github. Looks like array(
+ * Returns the latest version as returned from github. Looks like stdobject(
  *  'name' => '6.1.0',
  *  'zipball_url' => '...',
  *  'tarball_url' => '...'

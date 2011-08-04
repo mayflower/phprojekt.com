@@ -1,3 +1,4 @@
+<?php include_once('include.php'); ?>
 <!doctype html>
 <!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
@@ -80,16 +81,22 @@
                         <h2>Open Source Project Management</h2>
                     </header>
 
+                    <?php $latest = getLatestVersion(); ?>
                     <div class="phprojekt-download" id="download">
                         <a href="#">
                             <div class="download">Download</div>
-                            <div class="version" id="versionInfo">Version 6.1.0</div>
+                            <div class="version" id="versionInfo">Version <?php echo $latest->name; ?></div>
                             <!-- You are not allowed to do this -->
                         </a>
                     </div>
                     <div class="tooltip">
                         <div>
-                        <p>Download 6.1.0 as </br> zip or tar.gz.</p> <p>or download older releases</p>
+                        <p>
+                            Download <?php echo $latest->name; ?> as </br>
+                            <a href="<?php echo $latest->zipball_url; ?>">zip</a> or
+                            <a href="<?php echo $latest->tarball_url; ?>">tar.gz.</a>
+                        </p>
+                        <p>or download <a href="http://github.com/Mayflower/PHProjekt/downloads">older releases</a></p>
                         </div>
                     </div>
 
