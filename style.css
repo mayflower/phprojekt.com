@@ -144,7 +144,7 @@ div.articleThreeContainer {
 }
 
 article.pageThree {
-    height: 608px;
+    height: 308px;
     display: table;
 }
 
@@ -160,9 +160,9 @@ article.pageThree section.right {
 }
 
 footer {
-    height: 241px;
     width: 960px;
     margin: auto;
+    text-align: center;
 }
 
 #main {
