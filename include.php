@@ -52,7 +52,7 @@ function getLatestVersion()
 
     $newest = null;
     foreach ($tags as $t) {
-        if (preg_match('/^\d+\.\d+.\d+.*/', $t->name)) {
+        if (preg_match('/^\d+\.\d+.\d+$/', $t->name)) {
             if (is_null($newest) || version_compare($newest->name, $t->name, '<')) {
                 $newest = $t;
             }
