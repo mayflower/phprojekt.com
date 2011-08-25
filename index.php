@@ -82,12 +82,22 @@
                     </header>
 
                     <?php $latest = getLatestVersion(); ?>
-                    <div class="phprojekt-download" id="download">
-                        <a href="<?php echo $latest->zipball_url; ?>">
-                            <div class="download">Download</div>
-                            <div class="version" id="versionInfo">Version <?php echo $latest->name; ?></div>
-                            <!-- You are not allowed to do this -->
-                        </a>
+                    <div class="phprojekt-download">
+                        <div class="phprojekt-download-release" id="download">
+                            <a href="<?php echo $latest->zipball_url; ?>">
+                                <div class="download">Download</div>
+                                <div class="version" id="versionInfo">Version <?php echo $latest->name; ?></div>
+                                <!-- You are not allowed to do this -->
+                            </a>
+                        </div>
+                        <?php $latest = getLatestVersion(true); ?>
+                        <div class="phprojekt-download-rc">
+                            <a href="<?php echo $latest->zipball_url; ?>">
+                                <div class="download">Testing release?</div>
+                                <div class="version" id="versionInfo">Version <?php echo $latest->name; ?></div>
+                                <!-- You are not allowed to do this -->
+                            </a>
+                        </div>
                     </div>
                     <div class="tooltip">
                         <div>

@@ -37,7 +37,7 @@ function getScreenshots()
  *  'tarball_url' => '...'
  * )
  */
-function getLatestVersion()
+function getLatestVersion($includeRC = false)
 {
     $tags = file_get_contents('https://api.github.com/repos/Mayflower/PHProjekt/tags');
     if ($tags === false) {
@@ -52,7 +52,11 @@ function getLatestVersion()
 
     $newest = null;
     foreach ($tags as $t) {
-        if (preg_match('/^\d+\.\d+.\d+$/', $t->name)) {
+        if (!$includeRC && preg_match('/^\d+\.\d+.\d+$/', $t->name)) {
+            if (is_null($newest) || version_compare($newest->name, $t->name, '<')) {
+                $newest = $t;
+            }
+        } else if ($includeRC && preg_match('/^\d+\.\d+.\d+/', $t->name)) {
             if (is_null($newest) || version_compare($newest->name, $t->name, '<')) {
                 $newest = $t;
             }
