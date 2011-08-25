@@ -81,20 +81,20 @@
                         <h2>Open Source Project Management</h2>
                     </header>
 
+                    <?php $alpha = getLatestVersion(true); ?>
                     <?php $latest = getLatestVersion(); ?>
-                    <div class="phprojekt-download">
-                        <div class="phprojekt-download-release" id="download">
+                    <div class="phprojekt-download" id="download">
+                        <div class="phprojekt-download-release" >
                             <a href="<?php echo $latest->zipball_url; ?>">
                                 <div class="download">Download</div>
                                 <div class="version" id="versionInfo">Version <?php echo $latest->name; ?></div>
                                 <!-- You are not allowed to do this -->
                             </a>
                         </div>
-                        <?php $latest = getLatestVersion(true); ?>
                         <div class="phprojekt-download-rc">
-                            <a href="<?php echo $latest->zipball_url; ?>">
+                            <a href="<?php echo $alpha->zipball_url; ?>">
                                 <div class="download">Testing release?</div>
-                                <div class="version" id="versionInfo">Version <?php echo $latest->name; ?></div>
+                                <div class="version" id="versionInfo">Version <?php echo $alpha->name; ?></div>
                                 <!-- You are not allowed to do this -->
                             </a>
                         </div>

@@ -39,13 +39,17 @@ function getScreenshots()
  */
 function getLatestVersion($includeRC = false)
 {
-    $tags = file_get_contents('https://api.github.com/repos/Mayflower/PHProjekt/tags');
-    if ($tags === false) {
+    static $mtags = false;
+
+    if ($mtags == false) {
+        $mtags = file_get_contents('https://api.github.com/repos/Mayflower/PHProjekt/tags');
+    }
+    if ($mtags === false) {
         // HAELP
         throw new Exception('Could not contact github');
     }
 
-    $tags = json_decode($tags);
+    $tags = json_decode($mtags);
     if (empty($tags)) {
         throw new Exception('No version found!');
     }
