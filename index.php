@@ -146,21 +146,19 @@
                 <section class="center">
                     <header>
                         <h3>News</h3>
-                        <h4>25.8.2011</h4>
+                        <h4>28.11.2011</h4>
                     </header>
                     <p>
-                        We are happy to announce the release of PHProjekt 6.1 alpha 1. This is
-                        the first release of the upcoming PHProjekt 6.1.
+                        We are happy to announce the release of PHProjekt 6.1 beta 1.
                     </p>
                     <p>
-                        In PHProjekt 6.1 alpha 1 we improved performance and reduced
-                        overall memory needs. The release includes a completly new written
-                        Calendar module that supports CalDAV read only support. LDAP authentication
-                        is now supported.
+                        Since the first alphas hundreds of changes where made.
+                        We improved the layout, performance and added CalDAV
+                        and WebDAV support.
                     </p>
                     <p>
-                        If you are interested in trying out PHProjekt 6.1 alpha 1, download
-                        the release <a href="https://github.com/Mayflower/PHProjekt/zipball/6.1.0alpha1">here</a>.
+                        If you are interested in trying out PHProjekt 6.1 beta 1, download
+                        the release <a href="https://github.com/Mayflower/PHProjekt/zipball/6.1.0-beta1">here</a>.
                     </p>
                     <header>
                         <h3>Commercial</h3>
