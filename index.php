@@ -93,7 +93,7 @@
                         </div>
                         <div class="phprojekt-download-rc">
                             <a href="<?php echo $alpha->zipball_url; ?>">
-                                <div class="download">Alpha release</div>
+                                <div class="download">Beta release</div>
                                 <div class="version" id="versionInfo">Version <?php echo $alpha->name; ?></div>
                                 <!-- You are not allowed to do this -->
                             </a>
