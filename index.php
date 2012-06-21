@@ -231,7 +231,7 @@
     </style>
 
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
   <script>window.jQuery || document.write("<script src='js/libs/jquery-1.5.1.min.js'>\x3C/script>")</script>
 
   <!-- scripts concatenated and minified via ant build script-->
@@ -241,10 +241,8 @@
 
 <!-- Piwik -->
 <script type="text/javascript">
-var pkBaseURL = (("https:" == document.location.protocol) ?
-"https://piwik.mayflower.de/" : "http://piwik.mayflower.de/");
-document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js'
-type='text/javascript'%3E%3C/script%3E"));
+var pkBaseURL = (("https:" == document.location.protocol) ?  "https://piwik.mayflower.de/" : "http://piwik.mayflower.de/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
 </script><script type="text/javascript">
 try {
 var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 3);
