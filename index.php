@@ -63,11 +63,6 @@
                     Facebook
                 </a>
             </li>
-            <li>
-                <a href="http://p5.phprojekt.com">
-                    PHProjekt 5
-                </a>
-            </li>
         </ul>
     </header>
 
