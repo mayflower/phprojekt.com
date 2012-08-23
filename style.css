@@ -65,6 +65,11 @@ article.page {
     width: 960px;
 }
 
+article.pageDownload {
+    height: 600px;
+    display: block;
+}
+
 article.pageOne {
     height: 568px;
     display: table;

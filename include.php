@@ -30,19 +30,15 @@ function getScreenshots()
     return $ret;
 }
 
-/**
- * Returns the latest version as returned from github. Looks like stdobject(
- *  'name' => '6.1.0',
- *  'zipball_url' => '...',
- *  'tarball_url' => '...'
- * )
- */
-function getLatestVersion($includeRC = false)
-{
+function getVersions() {
     static $mtags = false;
 
     if ($mtags == false) {
-        $mtags = file_get_contents('https://api.github.com/repos/Mayflower/PHProjekt/tags');
+        if ('localhost' === $_SERVER['SERVER_NAME']) {
+            $mtags = file_get_contents('test.data');
+        } else {
+            $mtags = file_get_contents('https://api.github.com/repos/Mayflower/PHProjekt/tags');
+        }
     }
     if ($mtags === false) {
         // HAELP
@@ -53,6 +49,20 @@ function getLatestVersion($includeRC = false)
     if (empty($tags)) {
         throw new Exception('No version found!');
     }
+
+    return $tags;
+}
+
+/**
+ * Returns the latest version as returned from github. Looks like stdobject(
+ *  'name' => '6.1.0',
+ *  'zipball_url' => '...',
+ *  'tarball_url' => '...'
+ * )
+ */
+function getLatestVersion($includeRC = false)
+{
+    $tags = getVersions();
 
     $newest = null;
     foreach ($tags as $t) {
