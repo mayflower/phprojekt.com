@@ -76,16 +76,19 @@
                         <h2>Open Source Project Management</h2>
                     </header>
 
-                    <?php $alpha = getLatestVersion(true); ?>
-                    <?php $latest = getLatestVersion(); ?>
+                    <?php
+                    $alpha = getLatestVersion(true);
+                    $latest = getLatestVersion();
+                    $noRC = $alpha->name == $latest->name; ?>
                     <div class="phprojekt-download" id="download">
-                        <div class="phprojekt-download-release" >
+                        <div class="phprojekt-download-release phprojekt-download-release<?php echo $noRC ? "-norc" : "-rc" ?>" >
                             <a href="download.php?id=<?php echo $latest->commit->sha; ?>">
                                 <div class="download">Download</div>
                                 <div class="version" id="versionInfo">Version <?php echo $latest->name; ?></div>
                                 <!-- You are not allowed to do this -->
                             </a>
                         </div>
+                    <?php if (!$noRC) { ?>
                         <div class="phprojekt-download-rc">
                             <a href="download.php?id=<?php echo $alpha->commit->sha; ?>">
                                 <div class="download">Beta release</div>
@@ -93,6 +96,7 @@
                                 <!-- You are not allowed to do this -->
                             </a>
                         </div>
+                    <?php } ?>
                     </div>
                     <div class="tooltip">
                         <div>

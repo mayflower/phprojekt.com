@@ -65,11 +65,6 @@ article.page {
     width: 960px;
 }
 
-article.pageDownload {
-    height: 600px;
-    display: block;
-}
-
 article.pageOne {
     height: 568px;
     display: table;
@@ -90,10 +85,19 @@ article.pageOne .phprojekt-download-release {
     width: 180px;
     height: 44px;
     background: #000000;
+    padding: 10px;
+}
+
+article.pageOne .phprojekt-download-release-rc {
     border-radius: 8px 8px 0px 0px;
     -moz-border-radius: 8px 8px 0px 0px;
     -webkit-border-radius: 8px 8px 0px 0px;
-    padding: 10px;
+}
+
+article.pageOne .phprojekt-download-release-norc {
+    border-radius: 8px 8px 8px 8px;
+    -moz-border-radius: 8px 8px 8px 8px;
+    -webkit-border-radius: 8px 8px 8px 8px;
 }
 
 article.pageOne .phprojekt-download-rc {
