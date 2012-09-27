@@ -212,7 +212,7 @@
     </div>
 
     <footer>
-        &copy; 2011 PHProjekt Team.
+        &copy; 2011-2012 PHProjekt Team.
         All rights reserved.
         Supported by <a href="http://www.mayflower.de/de/unternehmen/open-source-labs">Mayflower Open Source Labs</a>.
     </footer>
