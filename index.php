@@ -150,20 +150,44 @@
                 <section class="center">
                     <header>
                         <h3>News</h3>
-                        <h4>15.05.2012</h4>
+                        <h4>09.10.2012</h4>
                     </header>
                     <p>
-                        We are happy to announce the release of PHProjekt 6.1.0
+                        PHProjekt 6.2 released
                     </p>
                     <p>
-                        Since the first alphas hundreds of changes where made.
-                        We improved the layout, performance and added CalDAV
-                        and WebDAV support. The calendar was completly rewritten
-                        and the overall look and feel was improved
+                        We are proud to announce the latest release of PHProjekt.
+                        After several month of work and a huge amount of bug fixes and improvements we are ready to take
+                        the next step in PHProjekt development.
+                        Among other things there are some true highlights worth mentioning.
                     </p>
                     <p>
-                        You can download PHProjekt 6.1.0 
-                        <a href="https://github.com/Mayflower/PHProjekt/zipball/6.1.0">here</a>.
+                        PHProjekt now comes with a new revolutionary way of timetracking.
+                        We enhanced the timecard to use the CalDav interface to allow timekeeping from anywhere and with
+                        any CalDav enabled device, without the need to ever open your browser window.
+                    </p>
+                    <p>
+                        The lists views have have been heavily optimized and now allow the listing thousands of items
+                        without slowing down the browser.
+                    </p>
+                    <p>
+                        The general performance of the whole calendar system has been improved to make it even more
+                        convenient to use CalDav or the web interface to manage events.
+                    </p>
+                    <p>
+                        Tags and the general search have been merged to provide unified access to all the important
+                        informations.
+                        In addition to that the search is now able to search for multiple tags which makes it possible
+                        to easily limit the results to items matching multiple criteria.
+                    </p>
+                    <p>
+                        The WebDav interface and the Filemanager are finally fully unified.
+                        This allows to access the same files via WebDav and the web without the need to worry about data
+                        duplication.
+                    </p>
+                    <p>
+                        If you would like to give us feedback on your PHProjekt experience, please feel free to sign up
+                        at our <a href="http://forum.phprojekt.com">forum</a> and join the discussion!
                     </p>
                     <header>
                         <h3>Commercial</h3>
