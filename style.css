@@ -132,9 +132,7 @@ article.pageOne .version {
 }
 
 div.articleTwoContainer {
-    background-image: url("./images/background-box-2.png");
-    background-repeat: repeat-x;
-    background-color: #001c22;
+    background-color: #08161d;
 }
 
 article.pageTwo {
