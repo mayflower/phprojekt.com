@@ -134,6 +134,11 @@
                                     <img src="images/screenshots/thumbnails/2.png" alt="The calendar"/>
                                 </a>
                             </div>
+                            <div>
+                                <a href="images/screenshots/3.png" rel="screenshot" title="Custom Modules">
+                                    <img src="images/screenshots/thumbnails/3.png" alt="Custom Modules"/>
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <p>
