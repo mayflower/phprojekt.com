@@ -34,6 +34,11 @@
                 </a>
             </li>
             <li>
+                <a href="http://try.phprojekt.com">
+                    Try Online
+                </a>
+            </li>
+            <li>
                 <a href="http://jira.opensource.mayflower.de/jira/browse/PHPROJEKT">
                     Bugtracker
                 </a>
