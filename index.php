@@ -44,7 +44,7 @@
                 </a>
             </li>
             <li>
-                <a href="http://confluence.opensource.mayflower.de/confluence/display/phprojekt/PHProjekt+6">
+                <a href="https://mayflower-osl.atlassian.net/wiki/display/PHPROJEKT/PHProjekt+6">
                     Documentation
                 </a>
             </li>
