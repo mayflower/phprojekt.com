@@ -34,38 +34,8 @@
                 </a>
             </li>
             <li>
-                <a href="http://try.phprojekt.com">
-                    Try Online
-                </a>
-            </li>
-            <li>
-                <a href="http://jira.opensource.mayflower.de/jira/browse/PHPROJEKT">
-                    Bugtracker
-                </a>
-            </li>
-            <li>
-                <a href="https://mayflower-osl.atlassian.net/wiki/display/PHPROJEKT/PHProjekt+6">
-                    Documentation
-                </a>
-            </li>
-            <li>
-                <a href="http://forum.phprojekt.com">
-                    Forum
-                </a>
-            </li>
-            <li>
                 <a href="https://github.com/Mayflower/PHProjekt">
                     Get Source
-                </a>
-            </li>
-            <li>
-                <a href="https://twitter.com/phprojekt6">
-                    Twitter
-                </a>
-            </li>
-            <li>
-                <a href="https://www.facebook.com/pages/PHProjekt/41182872373">
-                    Facebook
                 </a>
             </li>
         </ul>
@@ -146,17 +116,21 @@
                             </div>
                         </div>
                     </div>
-                    <p>
-                        If you are interested in PHProjekt but not yet convinced, take a look at
-                        <a href="http://try.phprojekt.com">our live demo</a>. It is running the
-                        latest stable version.
-                    </p>
                 </section>
                 <section class="center">
                     <header>
                         <h3>News</h3>
-                        <h4>09.10.2012</h4>
                     </header>
+                    <h4>09.08.2013</h4>
+                    <p>
+                        PHProjekt development discontinued.
+                    </p>
+                    <p>
+                        We are sorry to announce, that Mayflower will not continue the development
+                        of PHProjekt. However, PHProjekt will remain Open Source and anyone who
+                        would like to use or develop PHProjekt, will find the sources on github:</br>
+                        <a href="https://github.com/Mayflower/PHProjekt">https://github.com/Mayflower/PHProjekt</a>
+                    <h4>09.10.2012</h4>
                     <p>
                         PHProjekt 6.2 released
                     </p>
@@ -193,52 +167,6 @@
                     <p>
                         If you would like to give us feedback on your PHProjekt experience, please feel free to sign up
                         at our <a href="http://forum.phprojekt.com">forum</a> and join the discussion!
-                    </p>
-                    <header>
-                        <h3>Commercial</h3>
-                    </header>
-                    <p>
-                        Mayflower GmbH provides commercial support for PHProjekt 6. If you need help
-                        with installing Phprojekt or if you have special requirements, you can
-                        contact us at <a href="mailto:phprojekt AT mayflower DOT de">phprojekt AT mayflower DOT de</a>.
-                    </p>
-                </section>
-            </article>
-        </div>
-        <div class="articleThreeContainer">
-            <article class="page pageThree">
-            <a name="contribute"></a>
-                <section class="left">
-                    <header>
-                        <h3>Contributing</h3>
-                    </header>
-                    <p>
-                        If you are interested in the current development status, you can just take a look at
-                        <a href="http://jira.opensource.mayflower.de">our issue tracker</a>.
-                        If you find a bug or have an idea how we could make PHProjekt better, you can tell us there.
-                    </p>
-                </section>
-                <section class="center">
-                    <header>
-                        <h3>Community</h3>
-                    </header>
-                    <p>
-                        PHProjekt is a community project. This shows through an open infrastructure
-                        and community platforms. You can visit <a href="http://forum.phprojekt.com">the forum</a>
-                        for discussions and help or just
-                        <a href="http://jira.opensource.mayflower.de">browser current issues</a> and comment there.
-                    </p>
-
-                </section>
-                <section class="right">
-                    <header>
-                        <h3>Mailing list</h3>
-                    </header>
-                    <p>
-                        We use a mailing list to discuss development. You can browse
-                        <a href="http://mail.mayflower.de/pipermail/devml/">the archive</a> or subscribe at
-                        <a href="https://mail.mayflower.de/mailman/listinfo/devml">the info page</a>
-                        if you are interested in the development of PHProjekt.
                     </p>
                 </section>
             </article>
