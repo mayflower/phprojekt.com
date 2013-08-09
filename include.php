@@ -34,11 +34,7 @@ function getVersions() {
     static $mtags = false;
 
     if ($mtags == false) {
-        if ('localhost' === $_SERVER['SERVER_NAME']) {
-            $mtags = file_get_contents('test.data');
-        } else {
-            $mtags = file_get_contents('https://api.github.com/repos/Mayflower/PHProjekt/tags');
-        }
+        $mtags = file_get_contents('https://api.github.com/repos/Mayflower/PHProjekt/tags');
     }
     if ($mtags === false) {
         // HAELP

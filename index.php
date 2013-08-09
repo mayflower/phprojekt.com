@@ -50,6 +50,12 @@
                         <h1>PHProjekt</h1>
                         <h2>Open Source Project Management</h2>
                     </header>
+                        <p class="alert" style="width: 450px">
+                            We are sorry to announce, that Mayflower will not continue the development
+                            of PHProjekt. However, PHProjekt will remain Open Source and anyone who
+                            would like to use or develop PHProjekt, will find the sources on github:</br>
+                            <a class="alert-link" href="https://github.com/Mayflower/PHProjekt">https://github.com/Mayflower/PHProjekt</a>
+                        </p>
 
                     <?php
                     $alpha = getLatestVersion(true);
@@ -121,15 +127,6 @@
                     <header>
                         <h3>News</h3>
                     </header>
-                    <h4>09.08.2013</h4>
-                    <p>
-                        PHProjekt development discontinued.
-                    </p>
-                    <p>
-                        We are sorry to announce, that Mayflower will not continue the development
-                        of PHProjekt. However, PHProjekt will remain Open Source and anyone who
-                        would like to use or develop PHProjekt, will find the sources on github:</br>
-                        <a href="https://github.com/Mayflower/PHProjekt">https://github.com/Mayflower/PHProjekt</a>
                     <h4>09.10.2012</h4>
                     <p>
                         PHProjekt 6.2 released
